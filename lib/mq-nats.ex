@@ -1,5 +1,5 @@
 defmodule MQNATS do
-  defmmacro __using__(_) do
+  defmacro __using__(_) do
     quote location: :keep do
       use GenServer
       require Logger
