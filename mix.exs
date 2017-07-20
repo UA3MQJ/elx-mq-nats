@@ -18,6 +18,8 @@ defmodule MQNATS.Mixfile do
   end
 
   defp deps do
-    []
+    [
+      {:nats, git: "https://github.com/nats-io/elixir-nats.git"}
+    ]
   end
 end
