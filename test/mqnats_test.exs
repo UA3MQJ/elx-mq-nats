@@ -2,7 +2,7 @@ defmodule MqnatsTest do
 
   require Logger
   use ExUnit.Case
-  use Mqnats
+  use MQNATS
 
   test "create" do
     Process.register(self(), :mq_nats_tester)
