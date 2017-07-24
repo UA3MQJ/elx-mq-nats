@@ -1,7 +1,7 @@
 defmodule MQNATS do
 
   require Logger
-  Logger.debug ">>> MQNATS"
+  Logger.info ">>> MQNATS"
 
   defmacro __using__(_) do
     quote location: :keep do
