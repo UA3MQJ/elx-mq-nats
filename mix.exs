@@ -1,4 +1,4 @@
-defmodule MQNATS.Mixfile do
+defmodule Mqnats.Mixfile do
   use Mix.Project
 
   @version "0.0.1"
