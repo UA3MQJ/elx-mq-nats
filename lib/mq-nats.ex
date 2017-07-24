@@ -1,4 +1,10 @@
 defmodule MQNATS do
+
+  require Logger
+  def testfn do
+    Logger.debug ">>> testfn"
+  end
+
   defmacro __using__(_) do
     quote location: :keep do
       @service_name NatsService
