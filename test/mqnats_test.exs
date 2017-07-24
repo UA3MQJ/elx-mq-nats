@@ -1,4 +1,4 @@
-defmodule MqnatsTest do
+defmodule MQNATSTest do
 
   require Logger
   use ExUnit.Case
