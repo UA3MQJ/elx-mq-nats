@@ -7,7 +7,11 @@ defmodule MQNATSTest do
   test "create" do
     Process.register(self(), :mq_nats_tester)
 
+    Logger.debug ">>>>>>> test module pid =#{inspect self()}"
+
     {:ok, pid} = start_link()
+
+    Logger.debug ">>>>>>> GS pid =#{inspect pid}"
    
     assert {:ok, _nats_pid} = connect(pid)
     assert {:ok, _ref}      = subscribe(pid, "event")

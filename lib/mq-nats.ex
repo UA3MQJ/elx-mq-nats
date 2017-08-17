@@ -82,6 +82,7 @@ defmodule MQNATS do
       end
 
       def handle_info({:msg, _, subject, _reply, message} = msg, state) do
+        Logger.debug ">>>> info :msg msg=#{inspect msg}"
         on_subscribed_publish(%{subject: subject, message: message})
         {:noreply, state}
       end
